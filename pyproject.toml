@@ -1,15 +1,16 @@
 [tool.poetry]
-name = "multi-agent-playground"
+name = "multi-agent-skunkworks"
 version = "0.1.0"
 description = ""
 authors = ["Bussler <maarten.bussler@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.10"
 torch = {version = "^2.3.1+cu118", source = "pytorch-gpu-src"}
 torchvision = {version = "^0.18.1+cu118", source = "pytorch-gpu-src"}
 torchaudio = {version = "^2.3.1+cu118", source = "pytorch-gpu-src"}
+ray = {extras = ["rllib"], version = "^2.30.0"}
 
 [tool.poetry.scripts]
 
